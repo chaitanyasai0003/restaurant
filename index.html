@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+    
+    <title>  Restaurant </title>
+  </head>
+  <body>
+    
+    
+    <main>
+      
+      <section id="tableSection"> 
+        <h1 >Tables</h1>
+        <input
+          type="search"
+          name="searchTable"
+          id="searchTable"
+          placeholder="Search table"
+        />
+        <section id="tables"></section>
+      </section>
+      
+      <section id="menuSection">
+        <h1 >Menu</h1>
+        <input
+          type="search"
+          name="searchMenu"
+          id="searchMenu"
+          placeholder="Search menu  by course, by food "
+        />
+        
+        <section id="menu"></section>
+      
+      </section>
+    
+    </main>
+    <section class="modal hidden">
+      <div class="table-name">
+        <div></div>
+        <button class="btn-close">X</button>
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>Items</th>
+            <th>Price</th>
+            <th>Number of servs</th>
+          </tr>
+        </thead>
+        <tbody class="bill"></tbody>
+      </table>
+      <div>
+        <span id="total">Total : 0</span>
+        <button id="close-session">Close</button>
+      </div>
+    </section>
+    <div class="overlay hidden"></div>
+
+
+    <script src="main.js"></script>
+  
+  </body>
+  
+</html>

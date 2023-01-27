@@ -1,0 +1,259 @@
+* {
+  
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 0;
+    padding:0;
+  
+  }
+  
+  html, body {
+    height: 100%;
+   
+  }
+  
+  input {
+    display: block;
+    margin: 10px auto;
+    padding: 8px;
+    width: 65%;
+    border-radius: 8px;
+    border: 1px solid rgb(21, 21, 21);
+  }
+  .menuscroll{
+    overflow:scroll;
+  }
+  main {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr;
+    grid-template-rows: 1fr;
+    gap: 6px;
+    background-color: rgb(187, 239, 153);
+  
+    
+    margin: 0;
+    height: 100vh;
+   
+    background-size: cover;
+    text-align: center;
+  }
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-left: 40%;
+    
+   
+    width: fit-content;
+  
+    
+  }
+ 
+  .menubar{
+    
+    background-color:white;
+    
+    width: 40%;
+    margin-left: 30%;
+    border-radius: 10px;
+    
+  }
+  
+  
+  #tableSection {
+    grid-row: 1;
+    grid-column: 1;
+    
+   
+    overflow: scroll;
+  }
+  
+  #tables {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+  }
+  
+  .table {
+    border-radius: 30px;
+
+   
+    background-color:rgb(142, 197, 239);
+    display: flex;
+    padding: 8px;
+    gap: 6px;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+  
+  .table {
+    z-index: 2;
+  }
+  
+  .table div {
+    display: flex;
+    flex-flow: row wrap;
+  }
+   
+   .table div * {
+    flex: 1;
+  } 
+  #searchTable{
+  background-color:white;
+  
+  border-radius : 30px;
+  
+  }
+  
+  #searchMenu{
+    background-color:white;
+    border-radius: 30px;
+    
+   
+  
+    }
+  
+  #menuSection {
+   
+    
+    text-align: center;
+    grid-row: 1;
+    grid-column: 2;
+    padding: 10px;
+ 
+    overflow-y: scroll;
+    overflow-x: scroll;
+    
+    
+  }
+  
+  #menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-left: 5%;
+    gap: 15px;
+    width: 90%;
+  }
+  
+  .menuItem {
+    border-radius: 1px;
+    display: flex;
+    flex-flow: column wrap;
+    padding: 8px;
+    background-color:rgb(222, 137, 137) ;
+    border-radius: 100px   25px  100px 25px;
+    
+   
+    justify-content: space-between;
+    
+  }
+  .menuItem div {
+    display: flex;
+    flex-flow: row wrap;
+    height: 3rem;
+    justify-content: space-around;
+  }
+  
+   .hidden {
+    display: none;
+  }
+  .modal {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 0.4rem;
+    padding: 2.3rem;
+    width: 60%;
+    height: 60%;
+    overflow-y: scroll;
+    position: absolute;
+    top: 15%;
+    left: 25%;
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 10px;
+    z-index: 2;
+  }
+  
+  .modal div:last-child {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+  }
+  .modal button {
+      font-weight: 700;
+      font-size: 1rem;
+      border: none;
+      padding: 10px;
+      background-color: black;
+      color:white;
+      
+  }
+  .modal button:hover {
+      background-color: red;
+      color: black;
+  }
+  
+  .btn-close{
+    color: rgb(0, 0, 0);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+   
+    z-index: 1;
+  }
+  
+  
+  .table-name {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: rgb(243, 223, 223);
+    border-radius: 5px;
+}
+
+  
+  th {
+      padding: 16px;
+  }
+  td {
+      padding: 16px;
+      text-align: center;
+  }
+  .qbox{
+    border: 0px solid green;
+    border-bottom: 3.3px solid rgb(106, 218, 255);
+    border-radius: 0px;
+  }
+  .qbox:hover{
+    border: 0px solid green;
+    border-bottom: 3.3px solid rgb(106, 218, 255);
+    border-radius: 0px;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
+  .fa {
+    padding: 10px;
+    font-size: 20px !important;
+  }
+  
+  .fa:hover {
+    background-color: #efefef;
+    cursor: pointer;
+  }
+  
